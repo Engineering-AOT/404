@@ -80,7 +80,15 @@
         <!-- JAVASCRIPTS -->
         <script type="text/javascript" src="assets/js/plugins.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
-   
+         <script>
+        // Function to disable right-click context menu
+        function disableRightClick(event) {
+            event.preventDefault();
+        }
+
+        // Attach the disableRightClick function to the contextmenu event
+        window.addEventListener('contextmenu', disableRightClick);
+    </script>
    
     </body> 
     
